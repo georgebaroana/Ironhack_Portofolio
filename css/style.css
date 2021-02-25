@@ -1,0 +1,165 @@
+/* General Style */
+:root {
+    --main-color: #b4d1da;
+    --light-color: #ffffff; 
+    --dank-color: #2d2d2d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--dank-color);
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dank-color);
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    background: var(--light-color);
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+.menu  a {
+    margin-right: 50px;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid black;
+}
+
+nav img {
+    height: 20px;
+    width: 20px;
+}
+
+/* nav ul li:last-child img {
+    height: 15px;
+    width: 25px;
+} */
+
+.behance img {
+    height: 15px;
+    width: 25px;
+}
+
+.socialmedia a {
+    margin-left: 30px;
+}
+
+/* Header Content */
+
+.content {
+    min-height: 530px;
+    background: var(--main-color);
+}
+
+.content h1 {
+    max-width: 896px;
+    padding: 153px 0 153px 120px;
+}
+
+/* Project */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.projects img {
+    width: 100%;
+}
+
+/* About Me */
+
+.about {
+    min-height: 700px;
+}
+
+.about-content {
+    padding: 126px 120px;
+}
+
+.about-content .text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 96px;
+}
+
+/* Footer */
+.footer {
+    min-height: 350px;
+    background: var(--main-color);
+}
+
+.footer .footer-content {
+    padding: 90px 120px;
+    line-height: 42px;
+}
+
+.footer-content h1 {
+    margin-bottom: 56px;
+}
+
+.button .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    padding-bottom: 50px;
+}
+
+.link img {
+    height: 20px;
+    width: 35px;
+}
+
+.link p {
+    color: var(--light-color);
+    font-weight: 700;
+}
